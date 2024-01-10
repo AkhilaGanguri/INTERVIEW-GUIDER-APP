@@ -1,0 +1,238 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505">
+
+    <!-- Navbar -->
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="2dp"
+        android:background="#FFA500"
+        android:orientation="horizontal">
+
+        <!-- arrow Button -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/arrow"
+            android:contentDescription="Home"
+            android:onClick="goToHomePage" />
+    </LinearLayout>
+
+    <!-- Person Details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/navbar"
+        android:background="#000000">
+
+        <!-- Person 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Akhila Ganguri"
+                android:textColor="#FFA500"
+                android:textSize="20sp"
+                android:padding="16dp"/>
+
+            <ImageView
+                android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/girl"
+            android:contentDescription="Akhila's Image"
+            android:padding="16dp"
+            android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ganguriakhila@gmail.com"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#FFA500"/>
+
+
+        <!-- Person 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Meghana Eega"
+                android:textColor="#FFA500"
+                android:textSize="20sp"
+                android:padding="16dp"/>
+
+            <ImageView
+                android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/girl"
+            android:contentDescription="Meghana's Image"
+            android:padding="16dp"
+            android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/email2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="eegameghana88@gmail.com"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#FFA500"/>
+
+        <!-- Person 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Sunitha Balabadra"
+                android:textColor="#FFA500"
+                android:textSize="20sp"
+                android:padding="16dp"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/girl"
+                android:contentDescription="Sunitha's Image"
+                android:padding="16dp"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/email3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sunithabalabadra@gmail.com"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#FFA500"/>
+
+
+        <!-- Person 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Durga Bhavani Darapu"
+                android:textColor="#FFA500"
+                android:textSize="20sp"
+                android:padding="16dp"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/girl"
+                android:contentDescription="Bhavani's Image"
+                android:padding="16dp"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/email4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bhavanidarapu006@gmail.com"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#FFA500"/>
+
+
+        <!-- Person 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Allah Bakshu Sayyad"
+                android:textColor="#FFA500"
+                android:textSize="20sp"
+                android:padding="16dp"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/boy"
+                android:contentDescription="Allah Bakshu's Image"
+                android:padding="16dp"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/email5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="allahbakshu78@gmail.com"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

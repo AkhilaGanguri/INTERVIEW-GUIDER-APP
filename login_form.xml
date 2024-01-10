@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg9">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/login" />
+
+    <!-- EditText field for email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:inputType="textEmailAddress" />
+
+    <!-- EditText field for password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@+id/emailEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword" />
+
+    <!-- Eye image to toggle password visibility -->
+
+    <!-- Login Button -->
+    <ImageView
+        android:id="@+id/passwordVisibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/passwordEditText"
+        android:layout_alignBottom="@+id/passwordEditText"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/passwordEditText"
+        android:contentDescription="Toggle password visibility"
+        android:src="@drawable/closeeye" />
+
+    <!-- Add this TextView for "Forgot Password?" -->
+
+
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="15dp"
+        android:clickable="true"
+        android:onClick="forgotPasswordClicked"
+        android:text="Forgot Password?"
+        android:textColor="?attr/colorAccent"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:onClick="openDomainActivity"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/loginLinkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:clickable="true"
+        android:onClick="openSignupActivity"
+        android:text="Don't have an account? Signup"
+        android:textColor="#0000FF" />
+
+</RelativeLayout>

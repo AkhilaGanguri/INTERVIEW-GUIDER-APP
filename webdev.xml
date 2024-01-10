@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505">
+
+    <!-- Top Navbar -->
+
+    <!-- Signup and Login Buttons -->
+
+    <!-- Image -->
+
+    <!-- Quotation -->
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="#FFA500"
+        android:orientation="horizontal">
+
+    <!-- Home Button -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/arrow"
+            android:contentDescription="Home"
+            android:onClick="goToHomePage" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="494dp"
+        android:layout_below="@+id/navbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical">
+        <!-- Added TextView -->
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/blanks" />
+
+        <TextView
+            android:layout_width="430dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="WEB DEVELOPMENT"
+            android:paddingStart="30dp"
+            android:textColor="#FFFEFE"
+            android:textStyle="bold|italic"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/aptitudeButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:textSize="19sp"
+            android:backgroundTint="#ffa500"
+            android:layout_gravity="center_horizontal"
+            android:text=" APTITUDE TEST"/>
+
+
+        <Button
+            android:id="@+id/technicalButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:backgroundTint="#ffa500"
+            android:layout_gravity="center_horizontal"
+            android:text="TECHNICAL ROUND"/>
+
+        <Button
+            android:id="@+id/hrButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:backgroundTint="#ffa500"
+            android:layout_gravity="center_horizontal"
+            android:text="HR INTERVIEW" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/navbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/radiustoolbar"
+        android:orientation="horizontal">
+
+        <!-- Home Button -->
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/home3"
+            android:contentDescription="Home"
+            android:onClick="goToHomePage" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="264dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:contentDescription="Tips"
+            android:onClick="goToTips"
+            android:src="@drawable/ti" />
+        <ImageView
+            android:layout_width="264dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:contentDescription="Feedback"
+            android:onClick="goToFeedback"
+            android:src="@drawable/chat" />
+
+        <!-- Contact Us Button -->
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/telephone"
+            android:textSize="30sp"
+            android:backgroundTint="#ffffff"
+            android:contentDescription="Contact Us"
+            android:onClick="goToContactUs" />
+    </LinearLayout>
+
+</RelativeLayout>
